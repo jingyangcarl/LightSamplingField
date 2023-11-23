@@ -68,21 +68,22 @@
 ## Abstract
 Physically-based rendering (PBR) is key for immersive rendering effects used widely in the industry to showcase detailed realistic scenes from computer graphics assets. A well-known caveat is that producing the same is computationally heavy and relies on complex capture devices. Inspired by the success in quality and efficiency of recent volumetric neural rendering, we want to develop a physically-based neural shader to eliminate device dependency and significantly boost performance. However, no existing lighting and material models in the current neural rendering approaches can accurately represent the comprehensive lighting models and BRDFs properties required by the PBR process. Thus, this paper proposes a novel lighting representation that models direct and indirect light locally through a light sampling strategy in a learned light sampling field. We also propose BRDF models to separately represent surface/subsurface scattering details to enable complex objects such as translucent material (i.e., skin, jade). We then implement our proposed representations with an end-to-end physically-based neural face skin shader, which takes a standard face asset (i.e., geometry, albedo map, and normal map) and an HDRI for illumination as inputs and generates a photo-realistic rendering as output. Extensive experiments showcase the quality and efficiency of our PBR face skin shader, indicating the effectiveness of our proposed lighting and material representations.
 
-## Overview
-[![Overview](https://img.youtube.com/vi/qpIgS11DlJE/0.jpg)](https://www.youtube.com/watch?v=qpIgS11DlJE)
-
-Starting from sampling lights from HDRI and 3D points close to geometry along the light path, we feed encoded locations, view direction to Material network and Light Sampling Field network (with extra direct illumination code). The networks output material and indirect illumination code. Our PBR equation generates radiance at each sample based on our material model and light transport in the volume and further composites all the radiance on the light
-path to the receiver.
-
-## More Qualitative Results
-
+## Light Sampling Fields
 |    ![Light Sampling Field](assets/light_sampling_field.png)     |
 | :-------------------------------------------------------------: |
 |                Light Sampling Field Visualization               |
 |      ![Local Lighting Changes](assets/dynamic_field.png)        |
-|            Local Lighting Changes in Fixed Lighting             |
+|            Local Lighting Variations in Real Capture            |
+
+## More Qualitative Results
+
+|       ![Dynamic Sequences](assets/dynamic_sequences.gif)        |
+| :-------------------------------------------------------------: |
+|           Multiview Relighting on Dynamic Sequences             |
+|     ![Relighting via HDRI](assets/Relighting_via_HDRI.gif)      |
+|             Relighting via HDRI as Global Lighting              |
 |   ![Qualitative Results](assets/qualitative_lightstage.jpg)     |
-|           Qualitative Results Over Light Stage Scans            |
+|           Qualitative Results over Light Stage Scans            |
 
 ## Citation
 
