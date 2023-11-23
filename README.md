@@ -52,7 +52,7 @@
       <a href="#running-demo">Running Demo</a>
     </li> -->
     <li>
-      <a href="#Overview">Overview</a>
+      <a href="#Light Sampling Fields">Light Sampling Fields</a>
     </li>
     <li>
       <a href="#More Qualitative Results">More Qualitative Results</a>
