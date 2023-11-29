@@ -29,7 +29,7 @@
     <a href='https://iclr.cc/media/PosterPDFs/ICLR%202023/11973.png'>
       <img src='https://img.shields.io/badge/ICLR-Poster-yellow?style=for-the-badge&logo=openreview&logoColor=yellow' alt='Paper PDF'>
     </a>
-    <a href='' style='padding-left: 0.5rem;'>
+    <a href='https://jingyangcarl.github.io/LightSamplingField/' style='padding-left: 0.5rem;'>
       <img src='https://img.shields.io/badge/Project-Page-green?style=for-the-badge&logo=Google%20Home&logoColor=green' alt='Project Page'>
     <a href="https://youtu.be/qpIgS11DlJE"><img alt="youtube views" title="Subscribe to my YouTube channel" src="https://img.shields.io/youtube/views/qpIgS11DlJE?logo=youtube&labelColor=ce4630&style=for-the-badge"/></a>
   </p>
